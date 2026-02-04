@@ -1,54 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.9 on win32)" generated="2026-02-04T13:32:11.889721" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.13.9 on win32)" generated="2026-02-04T13:35:00.244833" rpa="false" schemaversion="5">
 <suite id="s1" name="Lab8 5" source="C:\Users\ChxraWish\Documents\clone\Lab8_5">
 <suite id="s1-s1" name="Tests" source="C:\Users\ChxraWish\Documents\clone\Lab8_5\tests">
 <suite id="s1-s1-s1" name="Lab8" source="C:\Users\ChxraWish\Documents\clone\Lab8_5\tests\Lab8.robot">
 <test id="s1-s1-s1-t1" name="Open Google Page" line="5">
 <kw name="Open Browser To Login Page">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-02-04T13:32:12.137353" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001DF6B5146E0&gt;</msg>
+<msg time="2026-02-04T13:35:00.474363" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000022A570346E0&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-02-04T13:32:12.136818" elapsed="0.000682"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${chrome_options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-dev-shm-usage</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-02-04T13:32:12.137655" elapsed="0.000374"/>
+<status status="PASS" start="2026-02-04T13:35:00.473817" elapsed="0.000682"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-02-04T13:32:12.138142" elapsed="0.000289"/>
+<status status="PASS" start="2026-02-04T13:35:00.474656" elapsed="0.000390"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-02-04T13:35:00.475172" elapsed="0.000332"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-02-04T13:35:00.475612" elapsed="0.000256"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-02-04T13:35:00.475973" elapsed="0.000300"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-02-04T13:35:00.476380" elapsed="0.000243"/>
 </kw>
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2026-02-04T13:32:12.138772" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2026-02-04T13:35:00.476934" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
 <arg>Chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2026-02-04T13:32:12.138547" elapsed="2.048828"/>
+<status status="PASS" start="2026-02-04T13:35:00.476721" elapsed="1.236460"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2026-02-04T13:32:14.187870" level="INFO">Opening url 'https://computing.kku.ac.th'</msg>
+<msg time="2026-02-04T13:35:01.713715" level="INFO">Opening url 'https://computing.kku.ac.th'</msg>
 <arg>https://computing.kku.ac.th</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2026-02-04T13:32:14.187559" elapsed="1.832801"/>
+<status status="PASS" start="2026-02-04T13:35:01.713404" elapsed="0.942753"/>
 </kw>
-<status status="PASS" start="2026-02-04T13:32:12.136147" elapsed="3.884391"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-04T13:35:02.656383" elapsed="2.464405"/>
 </kw>
-<status status="PASS" start="2026-02-04T13:32:12.133294" elapsed="3.887531"/>
+<status status="PASS" start="2026-02-04T13:35:00.473118" elapsed="4.647978"/>
+</kw>
+<status status="PASS" start="2026-02-04T13:35:00.470565" elapsed="4.650832"/>
 </test>
-<status status="PASS" start="2026-02-04T13:32:11.952283" elapsed="4.072657"/>
+<status status="PASS" start="2026-02-04T13:35:00.281925" elapsed="4.843476"/>
 </suite>
-<status status="PASS" start="2026-02-04T13:32:11.948954" elapsed="4.078394"/>
+<status status="PASS" start="2026-02-04T13:35:00.279025" elapsed="4.848805"/>
 </suite>
-<status status="PASS" start="2026-02-04T13:32:11.893798" elapsed="4.136348"/>
+<status status="PASS" start="2026-02-04T13:35:00.248812" elapsed="4.882004"/>
 </suite>
 <statistics>
 <total>
