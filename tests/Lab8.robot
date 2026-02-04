@@ -1,10 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
 
-*** Test Cases ***
-Open Google Page
-    Open Browser To Login Page
-
 *** Keywords ***
 Open Browser To Login Page
     ${chrome_options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys
